@@ -1,4 +1,4 @@
-py -m pip install -r requirements.txt
+
 
 import yfinance as yf
 import streamlit as st
