@@ -1,3 +1,0 @@
-py -m pip install yfinance
-py -m pip install streamlit
-py -m pip install pandas
