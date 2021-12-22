@@ -26,7 +26,7 @@ def load_data(year):
 	raw = df.drop(df[df.Age == 'Age'].index) # Deletes repeating headers in content
 	raw = raw.fillna(0)
 	playerstats = raw.drop(['Rk'], axis = 1)
-	return playerstats
+	
 playerstats = load_data(selected_year)
 
 #Sidebar - Team selection
