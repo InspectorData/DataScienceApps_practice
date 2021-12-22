@@ -42,8 +42,8 @@ df_selected_team = playerstats[(playerstats.Tm.isin(selected_team)) & (playersta
 
 st.header('Display Player Stats of Selected Team(s)')
 st.write('Data Dimension: ' + str(df_selected_team.shape[0]) + ' rows and ' + str(df_selected_team.shape[1]) +' columns.')
-test=df_selected_team.astype(str)
-st.dataframe(test) 
+[test=df_selected_team.astype(str)
+st.dataframe(test)]
 
 #Download NFL Player stats data
 #https://discuss.streamlit.io/t/how-to-download-file-in-streamlit/1806
