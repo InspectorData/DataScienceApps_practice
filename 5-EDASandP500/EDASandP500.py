@@ -54,7 +54,7 @@ st.markdown(filedownload(df_selected_sector), unsafe_allow_html=True)
 # https://pypi.org/project/yfinance/
 
 data = yf.download(
-        tickers = list(df_selected_sector[:10].Symbol),
+        tickers = list(df_selected_sector[:20].Symbol),
         period = "ytd",
         interval = "1d",
         group_by = 'ticker',
@@ -76,7 +76,7 @@ def price_plot(symbol):
   plt.ylabel('Closing Price', fontweight='bold')
   return st.pyplot()
 
-num_company = st.sidebar.slider('Number of Companies', 1, 20)
+num_company = st.sidebar.slider('Number of Companies', 1, 15)
 
 if st.button('Show Plots'):
     st.header('Stock Closing Price')
