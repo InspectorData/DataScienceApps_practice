@@ -76,7 +76,7 @@ def price_plot(symbol):
   plt.ylabel('Closing Price', fontweight='bold')
   return st.pyplot()
 
-num_company = st.sidebar.slider('Number of Companies', 1, 5)
+num_company = st.sidebar.slider('Number of Companies', 1, 20)
 
 if st.button('Show Plots'):
     st.header('Stock Closing Price')
